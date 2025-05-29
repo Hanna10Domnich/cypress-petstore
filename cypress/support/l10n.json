@@ -1,0 +1,24 @@
+{
+  "login": {
+    "usernamePlaceholder": "Username",
+    "passwordPlaceholder": "Password",
+    "loginButton": "Login",
+    "errorMessage": "Epic sadface: Username and password do not match any user in this service"
+  },
+  "inventory": {
+    "addToCart": "Add to cart",
+    "remove": "Remove",
+    "cartTitle": "Your Cart"
+  },
+  "cart": {
+    "checkout": "Checkout",
+    "continueShopping": "Continue Shopping"
+  },
+  "checkout": {
+    "firstNamePlaceholder": "First Name",
+    "lastNamePlaceholder": "Last Name",
+    "postalCodePlaceholder": "Zip/Postal Code",
+    "continueButton": "Continue"
+  }
+  // Add more localization strings as needed
+}

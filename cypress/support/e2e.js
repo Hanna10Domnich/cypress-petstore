@@ -15,3 +15,14 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands';
+
+const l10n = require('./l10n.json');
+const reqs = require('./requirements');
+const urls = require('./urls');
+const selectors = require('./selectors');
+
+// Example: Make globals available via Cypress.env
+Cypress.env('l10n', l10n);
+Cypress.env('reqs', reqs);
+Cypress.env('urls', urls);
+Cypress.env('selectors', selectors);

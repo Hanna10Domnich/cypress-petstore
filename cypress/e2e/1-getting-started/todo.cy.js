@@ -11,6 +11,9 @@
 // please read our getting started guide:
 // https://on.cypress.io/introduction-to-cypress
 
+const selectors = require('../support/selectors');
+const users = require('../sensitive-data/env-users.json');
+
 describe('example to-do app', () => {
   beforeEach(() => {
     // Cypress starts out with a blank slate for each test
@@ -124,4 +127,8 @@ describe('example to-do app', () => {
       cy.contains('Clear completed').should('not.exist');
     });
   });
+
+  // Example usage in a test:
+  // cy.get(selectors.login.usernameInput).type(users.standard_user.username);
+  // cy.get(selectors.login.passwordInput).type(users.standard_user.password);
 });
