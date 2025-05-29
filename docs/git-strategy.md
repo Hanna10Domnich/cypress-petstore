@@ -1,9 +1,11 @@
 # Git Workflow and Branching Strategy
 
 ## Overview
+
 This document outlines the recommended Git workflow and branching strategy for the project. Following these guidelines will help maintain a clean, organized, and collaborative codebase.
 
 ## Branch Types
+
 - **main**: The stable production branch. Only thoroughly tested and reviewed code is merged here.
 - **develop**: The integration branch for features and fixes. All development happens here before being merged to `main`.
 - **feature/**: Used for developing new features. Branch off from `develop`.
@@ -12,6 +14,7 @@ This document outlines the recommended Git workflow and branching strategy for t
 - **release/**: Used to prepare a new production release. Branch off from `develop` and merge into `main` and `develop` after release.
 
 ## Workflow Rules
+
 1. **Clone the repository** and create a new branch for your work:
    ```sh
    git checkout develop
@@ -26,15 +29,30 @@ This document outlines the recommended Git workflow and branching strategy for t
 7. **Delete merged branches** from the remote repository to keep it clean.
 
 ## Example Branch Names
+
 - `feature/login-page`
 - `bugfix/fix-navbar`
 - `hotfix/critical-bug`
 - `release/v1.2.0`
 
 ## Additional Guidelines
+
 - Keep branches focused on a single purpose.
 - Rebase or merge `develop` into your branch regularly to avoid large conflicts.
 - Do not commit build artifacts, secrets, or files listed in `.gitignore`.
+
+---
+
+## Repository Enforcement Rules
+
+The following rules are enforced in this repository:
+
+- **Direct commits to `main` are not allowed.** All changes must go through a pull request (PR).
+- **At least one approval is required** for every PR before merging.
+- **Only squash merges are allowed.** Merge commits and rebase merges are disabled.
+- **Source branches are automatically deleted** after a PR is merged.
+
+These settings are managed via GitHub branch protection rules and repository settings.
 
 ---
 
