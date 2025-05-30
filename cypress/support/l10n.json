@@ -19,6 +19,6 @@
     "lastNamePlaceholder": "Last Name",
     "postalCodePlaceholder": "Zip/Postal Code",
     "continueButton": "Continue"
-  }
-  // Add more localization strings as needed
+  },
+  "cartMaxItems": 50
 }
